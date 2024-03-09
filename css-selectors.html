@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* element selector */
+      div {
+        background-color: rebeccapurple;
+      }
+      /* class selector */
+      .blue {
+        background-color: blue;
+      }
+      /* id selector */
+      #gray {
+        background-color: gray;
+      }
+      /* child selector */
+      div > p {
+        background-color: brown;
+        color: aqua;
+      }
+      /* descendant selector */
+      div p {
+        background-color: yellow;
+        color: aqua;
+      }
+      /* pseudo selector */
+      a:visited {
+        color: yellow;
+      }
+      a:active{
+        background-color: brown;
+      }
+      a:hover{
+        background-color: blue;
+      }
+      p:first-child{
+        background-color: aqua;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>I am elemetnt selector</div>
+    <div class="blue">I am class selector</div>
+    <div id="gray">I am id selector</div>
+    <div>
+      <p>I am child selector</p>
+    </div>
+    <a href="https://google.com">go to google</a>
+    <div>
+    <p>First child selector</p>
+    </div>
+  </body>
+</html>
