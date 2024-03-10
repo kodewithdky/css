@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box:first-child{
+            background-color: blueviolet;
+        } */
+      /* .box::first-line{
+            background-color: aqua;
+        } */
+      /* .boxes * {
+        color: aquamarine;
+      } */
+      /* p,
+      .box,
+      [data-color="primary"] {
+        color: blue;
+        padding: 40px;
+      } */
+
+    /* .box:nth-child(odd){
+        background-color: blue;
+    } */
+
+    .boxes::before{
+        content: 'DK Is Good boy.';
+    }
+    .boxes::after{
+        content: 'Sigma Express Is Very Good.';
+    }
+    ::selection{
+        color: aqua;
+    }
+    .box::first-letter{
+        color: blue;
+        font-size: 45px;
+    }
+    input::placeholder{
+        color: green;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        veniam repudiandae nemo tenetur. Doloribus maxime dolorem mollitia velit
+        libero, magni ullam quaerat voluptas sint! A sed tempore optio
+        repudiandae eligendi?
+      </div>
+      <div class="box" data-color="primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos id totam veniam nemo. Delectus sed deleniti laboriosam ipsum aperiam. Modi reiciendis maiores cum delectus vitae laboriosam, temporibus eos hic. Odit.</div>
+      <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem maxime odio architecto nisi eligendi quas, maiores veritatis at exercitationem quaerat temporibus. Minus eligendi quam, architecto ea corrupti autem excepturi repellat!
+      </div>
+      <input type="text" name="" id="" placeholder="enter text here">
+    </div>
+  </body>
+</html>
