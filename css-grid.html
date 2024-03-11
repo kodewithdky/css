@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 80vw;
+        border: 2px solid black;
+        display: grid;
+        /* grid-template-columns: 120px 100px; */
+        grid-template-columns: [pahla]120px [doosara]100px [teesara];
+        /* grid-template-rows: 100px 100px 100px;
+             */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(4,fr); */
+        /* grid-template-rows: repeat(4,minmax(100px,1fr)); */
+        grid-template-rows: repeat(4, 80px);
+        grid-template-rows: repeat(2, 80px);
+        /* gap: 35px; */
+        row-gap: 20px;
+        column-gap: 10px;
+        /* justify-items: center;
+        align-items: center; */
+        place-content: center;
+      }
+      .item {
+        width: 100px;
+        height: 50px;
+        background-color: aquamarine;
+        padding: 3px;
+        margin: 5px;
+      }
+      /* .item-1 {
+        grid-row: 1/2;
+        grid-column: pahla/t;
+      } */
+      /* .item-4 {
+         grid-row: 1/2; 
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column: 1/2;
+      }
+       */
+      .boxes {
+        border: 2px solid black;
+        display: grid;
+        margin-top: 50px;
+        grid-template-areas:
+          "nav nav nav"
+          "side article article"
+          "footer footer footer";
+      }
+      .box {
+        /* width: 100px; */
+        height: 100px;
+        margin: 5px;
+        padding: 3px;
+      }
+      .box-1 {
+        grid-area: nav;
+        background-color: #7fffd4;
+      }
+      .box-2 {
+        grid-area: side;
+        background-color: #17caca;
+      }
+      .box-3 {
+        grid-area: article;
+        background-color: #caca1e;
+      }
+      .box-4 {
+        grid-area: footer;
+        background-color: #ba740c;
+      }
+      .box-5 {
+        /* grid-area: footer; */
+        background-color: #0cba15;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item item-4">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <div class="boxes">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+  </body>
+</html>
